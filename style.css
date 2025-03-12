@@ -67,9 +67,9 @@ body {
   justify-content: flex-start;
   text-align: left;
   color: white;
-  padding-left: 5%; /* Adjust from 10% to 5% to move slightly right */
-  width: 100vw; /* Ensure it takes the full screen width */
-  height: 100vh; /* Ensure full viewport height */
+  padding-left: 5%;
+  width: 100vw; 
+  height: 100vh; 
 }
 
 /* Dark overlay for better readability */
@@ -80,37 +80,37 @@ body {
   width: 100%;
 
   background: black;
-  opacity: 0.6; /* Adjust for more/less darkness */
+  opacity: 0.6; 
 }
 
 /* Center the hero text */
 .hero-content {
   max-width: 10px;
-  text-align: left; /* Ensures text is aligned left */
-  margin-left: 1; /* Removes any auto-centering */
+  text-align: left; 
+  margin-left: 1; 
 }
 
 .hero-content {
   max-width: 600px;
-  text-align: left; /* Ensures text is aligned left */
+  text-align: left; 
 }
 
 .styled-title h1 {
-  font-size: 10px; /* Bigger title */
+  font-size: 10px; 
   font-weight: bold;
   margin-bottom: 20px;
   z-index: 2;
 }
 
 .hero-content p {
-  font-size: 15px; /* Larger text for readability */
-  line-height: 1.3; /* More spacing between lines */
-  word-wrap: break-word; /* Ensures long words don’t overflow */
-  overflow: hidden; /* Prevents any unwanted cutoff */
+  font-size: 15px; 
+  line-height: 1.3;
+  word-wrap: break-word; 
+  overflow: hidden; 
 }
 .cta-button {
-  display: block; /* Ensures it doesn’t take full width */
-  margin-left: 0; /* Forces it to align with text */
+  display: block; /
+  margin-left: 0; 
 }
 
 .home-para {
@@ -119,7 +119,7 @@ body {
   margin-bottom: 20px;
 }
 .styled-des {
-  font-size: 400px; /* Bigger title */
+  font-size: 400px;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -134,13 +134,13 @@ body {
 }
 .logo {
   color: #fff;
-  font-size: 20px; /* Adjusts the size */
+  font-size: 20px; 
   font-weight: bold;
   font-family: sans-serif;
   list-style: none;
-  margin: 10px 20px; /* Provides spacing */
+  margin: 10px 20px; 
   position: absolute;
-  left: 20px; /* Moves it to the top-left corner */
+  left: 20px; 
 }
 
 /* portfolio */
@@ -149,17 +149,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Centers content vertically */
-  min-height: 100vh; /* Ensures it takes up full screen height */
+  justify-content: center;
+  min-height: 100vh; 
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevents unwanted horizontal scrolling */
+  overflow-x: hidden; 
 }
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
-  gap: 10px; /* Ensures even spacing */
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 10px; 
   width: 85%;
   margin: auto;
   padding: 10px;
@@ -167,15 +167,15 @@ body {
 }
 
 .gallery img {
-  width: 100%; /* Ensures full width inside grid */
-  height: 250px; /* Increase image height */
-  object-fit: cover; /* Crops the image to fit */
+  width: 100%; 
+  height: 250px; 
+  object-fit: cover; 
   border-radius: 8px;
 }
 
 /* Hover effect for a smooth transition */
 .gallery img:hover {
-  transform: scale(1.4); /* Slight zoom effect */
+  transform: scale(1.4); 
   box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
   transition: transform 0.2s ease-in-out;
 }
@@ -183,9 +183,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Center it vertically */
-  height: 100vh; /* Makes sure it takes full height */
-  padding-top: 80px; /* Prevents overlap with navbar */
+  justify-content: center; 
+  height: 100vh; 
+  padding-top: 80px; 
 }
 
 .container {
@@ -194,20 +194,20 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding-top: 60px; /* Prevents overlap with navbar */
+  padding-top: 60px; /
 }
 @media screen and (max-width: 1024px) {
   .gallery {
     grid-template-columns: repeat(
       2,
       1fr
-    ); /* 2 images per row on smaller screens */
+    ); 
   }
 }
 
 @media screen and (max-width: 600px) {
   .gallery {
-    grid-template-columns: repeat(1, 1fr); /* 1 image per row on mobile */
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 /* portfolio */
@@ -217,7 +217,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Full screen height */
+  height: 100vh; 
   width: 100vw;
   background: url("../images/contact-page-image.jpg") no-repeat center
     center/cover;
@@ -238,9 +238,9 @@ body {
 }
 .contact-form {
   background: rgb(40, 39, 39);
-  max-width: 610px; /* Restricts form width */
-  width: 90%; /* Makes it responsive */
-  margin: 0 auto; /* Centers it */
+  max-width: 610px; 
+  width: 90%; 
+  margin: 0 auto; 
   padding: 20px;
   background: #1b1b1b;
   border-radius: 10px;
@@ -277,7 +277,7 @@ body {
 .contact-form button {
   background: white;
   color: black;
-  font-size: 18px; /* Increase font size */
+  font-size: 18px; 
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s ease-in-out;
@@ -289,21 +289,21 @@ body {
 }
 
 .social-icons a {
-  color: white; /* Ensures icons are white */
-  font-size: 10px; /* Adjust icon size */
+  color: white; 
+  font-size: 10px; 
   transition: color 0.3s ease-in-out;
 }
 
 .social-icons a:hover {
-  color: gray; /* Change color on hover */
+  color: gray; 
 }
 
 .social-icons {
   display: list-item;
-  justify-content: flex-start; /* Aligns icons to the left inside the form */
-  gap: 10px; /* Adds spacing between icons */
+  justify-content: flex-start; 
+  gap: 10px; 
   margin-top: 5px;
-  width: 100%; /* Ensures it stays within the form width */
+  width: 100%; 
   z-index: 2;
 }
 /* contact-form */
@@ -312,17 +312,17 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start; /* Aligns left */
+  align-items: flex-start;
   padding: 120px;
-  min-height: 100vh; /* Makes sure it covers full viewport */
+  min-height: 100vh; 
   color: white;
   background-color: #1b1b20;
-  max-width: 1200px; /* Limits width to match design */
-  margin: 0 auto; /* Centers horizontally */
+  max-width: 1200px; 
+  margin: 0 auto; 
 }
 
 .services-heading {
-  font-size: 50px; /* Bigger heading */
+  font-size: 50px; 
   margin-bottom: 50px;
   font-weight: bold;
 }
@@ -332,13 +332,13 @@ body {
 }
 
 .service p {
-  color: #cccccc; /* Light grey text */
+  color: #cccccc; 
 }
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns */
-  gap: 50px 80px; /* Adds space between items */
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 50px 80px; 
   width: 100%;
 }
 
@@ -350,14 +350,14 @@ body {
 }
 .services-button {
   display: flex;
-  justify-content: flex-end; /* Aligns button to the right */
+  justify-content: flex-end; 
   width: 100%;
   margin-top: 30px;
 }
 .cta-button {
   background: white;
   color: black;
-  padding: 18px 40px; /* Bigger button */
+  padding: 18px 40px; 
   font-size: 8px;
   font-weight: bold;
   border: none;
@@ -374,18 +374,18 @@ body {
   justify-content: space-between;
   align-items: center;
   min-height: 100vh;
-  padding: 120px; /* More padding for proper spacing */
+  padding: 120px; 
   color: white;
   background-color: #1b1b20;
-  max-width: 4450px; /* Limit width for better layout */
-  margin: 0 auto; /* Center the section */
+  max-width: 4450px; 
+  margin: 0 auto; 
 }
 
 .about-left {
   flex: 1;
   font-size: 35px;
   text-align: left;
-  padding-right: 70px; /* Adds space between left and right */
+  padding-right: 70px; 
 }
 
 .about-left h3 {
@@ -400,7 +400,7 @@ body {
 
 .about-right {
   flex: 1.5;
-  max-width: 3000px; /* Increases width for readability */
+  max-width: 3000px; 
   text-align: left;
 }
 
