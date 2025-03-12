@@ -437,3 +437,51 @@ body {
   background: gray;
   color: white;
 }
+
+
+  .container {
+    max-width: 1300px; /* Limits max width */
+    width: 90%; /* Makes it responsive */
+    margin: 0 auto; /* Centers it */
+}
+
+h1 {
+    font-size: 4vw; /* Adjusts with screen size */
+}
+
+p {
+    font-size: 1.5vw; /* Resizes for readability */
+}
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 5vh 5vw; /* Scales padding dynamically */
+}
+.cta-button {
+    padding: 15px 30px;
+    font-size: 1.5vw;
+    width: auto;
+    max-width: 300px; /* Prevents it from becoming too big */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.cta-button {
+    padding: 15px 30px;
+    font-size: 1.5vw;
+    width: auto;
+    max-width: 300px; /* Prevents it from becoming too big */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
