@@ -62,7 +62,7 @@ body {
   right: 0;
   width: 100vw;
   height: 100vh;
-  background: url("/images/hero-image.jpg") no-repeat center center/cover;
+  background: url("images/hero-image.jpg") no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: flex-start;
