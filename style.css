@@ -372,6 +372,7 @@ body {
 /* about*/
 .about-section {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   min-height: 100vh;
@@ -380,12 +381,14 @@ body {
   background-color: #1b1b20;
   max-width: 4450px; /* Limit width for better layout */
   margin: 0 auto; /* Center the section */
+   text-align: center; 
 }
 
 .about-left {
   flex: 1;
   text-align: left;
-  padding-right: 70px; /* Adds space between left and right */
+   min-width: 50%;
+  padding-right: 50px; /* Adds space between left and right */
 }
 
 .about-left h3 {
@@ -398,7 +401,15 @@ body {
   font-size: 215px; /* Bigger title */
   font-weight: bold;
   margin-bottom: 20px;
+  font-size: 4vw;
 }
+@media screen and (max-width: 768px) {
+    .about-section {
+        flex-direction: column; /* Stacks content vertically */
+        padding: 50px;
+        text-align: center;
+    }
+
 
 .about-right {
   flex: 1.5;
