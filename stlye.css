@@ -97,14 +97,14 @@ body {
 }
 
 .styled-title h1 {
-  font-size: 40px; /* Bigger title */
+  font-size: 20px; /* Bigger title */
   font-weight: bold;
   margin-bottom: 20px;
   z-index: 2;
 }
 
 .hero-content p {
-  font-size: 70px; /* Larger text for readability */
+  font-size: 30px; /* Larger text for readability */
   line-height: 1.3; /* More spacing between lines */
   word-wrap: break-word; /* Ensures long words don’t overflow */
   overflow: hidden; /* Prevents any unwanted cutoff */
