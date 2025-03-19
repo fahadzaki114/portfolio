@@ -231,7 +231,8 @@ html, body {
   height: 100vh; /* Full screen height */
   width: 100vw;
   background: url("images/contact-page-image.jpg") no-repeat center
-    center/cover;
+  background-attachment: fixed;
+  center/cover;
   text-align: center;
   color: white;
   padding-top: 100px;
