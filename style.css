@@ -228,7 +228,7 @@ body {
   width: 100vw;
   
   /* Fixed background image */
-  background: url("images/contact-page-image.jpg") no-repeat center center / cover;
+  
   background-attachment: fixed;
   
   text-align: center;
