@@ -260,7 +260,7 @@ body {
 
 .contact-form form {
   /* Fix invalid property: use display:flex instead of display:absolute */
-  display: flex;
+  display: absolute;
   flex-direction: column;
 }
 
