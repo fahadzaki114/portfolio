@@ -216,7 +216,7 @@ body {
 
 /* contact-form */
 .contact-section {
-  position: relative; /* Allows z-index to work */
+  
   display: flex;
   flex-direction: column;
   align-items: center;
