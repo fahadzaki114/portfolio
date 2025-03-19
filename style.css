@@ -213,30 +213,35 @@ body {
   }
 }
 /* portfolio */
+/* Remove default margin/padding and disable scroll */
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
   overflow: hidden; /* <-- Key to disabling scroll */
 }
+
+/* CONTACT SECTION */
 .contact-section {
-    position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: fixed;
+  position: relative; /* Needed for ::before overlay to be absolute inside */
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Full screen height */
+  
+  /* Fill the entire viewport */
+  height: 100vh; 
   width: 100vw;
-  background: url("images/contact-page-image.jpg") no-repeat center
+  
+  /* Fixed background so it doesn't scroll */
+  background: url("images/contact-page-image.jpg") no-repeat center center / cover;
   background-attachment: fixed;
-  center/cover;
+  
   text-align: center;
   color: white;
   padding-top: 100px;
 }
+
 /* Dark overlay effect */
 .contact-section::before {
   content: "";
@@ -248,26 +253,33 @@ html, body {
   background: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
+
+/* CONTACT FORM CONTAINER */
 .contact-form {
-  background: rgb(40, 39, 39);
-  max-width: 610px; /* Restricts form width */
-  width: 90%; /* Makes it responsive */
-  margin: 0 auto; /* Centers it */
+  background: #1b1b1b;  /* Or #282727 or whichever dark color you prefer */
+  max-width: 610px; 
+  width: 90%; 
+  margin: 0 auto; 
   padding: 20px;
-  background: #1b1b1b;
   border-radius: 10px;
-  z-index: 2;
+  
+  /* Ensure the form is above the overlay (z-index: 2) */
+  z-index: 2; 
 }
 
+/* Fix invalid 'display: absolute;' to 'display: flex;' */
 .contact-form form {
-  display: absolute;
+  display: flex;
   flex-direction: column;
 }
+
+/* Extra style elements you had */
 .contact-bg {
   text-align: left;
   color: white;
   z-index: 2;
 }
+
 .contact-form label {
   font-size: 25px;
   text-align: left;
@@ -277,7 +289,6 @@ html, body {
 
 .contact-form input {
   width: 100%;
-
   margin-bottom: 10px;
   border: 1px solid white;
   background: transparent;
@@ -289,7 +300,7 @@ html, body {
 .contact-form button {
   background: white;
   color: black;
-  font-size: 18px; /* Increase font size */
+  font-size: 18px; 
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s ease-in-out;
@@ -301,23 +312,24 @@ html, body {
 }
 
 .social-icons a {
-  color: white; /* Ensures icons are white */
-  font-size: 10px; /* Adjust icon size */
+  color: white; 
+  font-size: 10px; 
   transition: color 0.3s ease-in-out;
 }
 
 .social-icons a:hover {
-  color: gray; /* Change color on hover */
+  color: gray; 
 }
 
 .social-icons {
   display: list-item;
-  justify-content: flex-start; /* Aligns icons to the left inside the form */
-  gap: 10px; /* Adds spacing between icons */
+  justify-content: flex-start; 
+  gap: 10px; 
   margin-top: 5px;
-  width: 100%; /* Ensures it stays within the form width */
+  width: 100%; 
   z-index: 2;
 }
+
 /* contact-form */
 
 .services-section {
