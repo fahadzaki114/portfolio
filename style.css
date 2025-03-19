@@ -213,29 +213,19 @@ body {
   }
 }
 /* portfolio */
-/* contact-form */
 .contact-section {
-  /* Enable the overlay pseudo-element to position correctly */
-  position: relative;
-  background: url("images/contact-page-image.jpg") no-repeat center
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
-  /* Full viewport size */
-  height: 100vh; 
+  height: 100vh; /* Full screen height */
   width: 100vw;
-  
-  /* Fixed background image */
-  
-  background-attachment: fixed;
-  
+  background: url("images/contact-page-image.jpg") no-repeat center
+    center/cover;
   text-align: center;
   color: white;
   padding-top: 100px;
 }
-
 /* Dark overlay effect */
 .contact-section::before {
   content: "";
@@ -247,29 +237,26 @@ body {
   background: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
-
 .contact-form {
-  background: #1b1b1b; /* Use whichever background you prefer */
-  max-width: 610px; 
-  width: 90%; 
-  margin: 0 auto; 
+  background: rgb(40, 39, 39);
+  max-width: 610px; /* Restricts form width */
+  width: 90%; /* Makes it responsive */
+  margin: 0 auto; /* Centers it */
   padding: 20px;
+  background: #1b1b1b;
   border-radius: 10px;
-  z-index: 2; /* So the form is above the overlay */
+  z-index: 2;
 }
 
 .contact-form form {
-  /* Fix invalid property: use display:flex instead of display:absolute */
   display: absolute;
   flex-direction: column;
 }
-
 .contact-bg {
   text-align: left;
   color: white;
   z-index: 2;
 }
-
 .contact-form label {
   font-size: 25px;
   text-align: left;
@@ -279,6 +266,7 @@ body {
 
 .contact-form input {
   width: 100%;
+
   margin-bottom: 10px;
   border: 1px solid white;
   background: transparent;
@@ -290,7 +278,7 @@ body {
 .contact-form button {
   background: white;
   color: black;
-  font-size: 18px; 
+  font-size: 18px; /* Increase font size */
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s ease-in-out;
@@ -302,24 +290,23 @@ body {
 }
 
 .social-icons a {
-  color: white; 
-  font-size: 10px; 
+  color: white; /* Ensures icons are white */
+  font-size: 10px; /* Adjust icon size */
   transition: color 0.3s ease-in-out;
 }
 
 .social-icons a:hover {
-  color: gray; 
+  color: gray; /* Change color on hover */
 }
 
 .social-icons {
   display: list-item;
-  justify-content: flex-start; 
-  gap: 10px; 
+  justify-content: flex-start; /* Aligns icons to the left inside the form */
+  gap: 10px; /* Adds spacing between icons */
   margin-top: 5px;
-  width: 100%; 
+  width: 100%; /* Ensures it stays within the form width */
   z-index: 2;
 }
-
 /* contact-form */
 
 .services-section {
