@@ -215,18 +215,27 @@ body {
 /* portfolio */
 /* contact-form */
 .contact-section {
+  /* Enable the overlay pseudo-element to position correctly */
+  position: relative;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
+  /* Full viewport size */
   height: 100vh; 
   width: 100vw;
-  background: url("images/contact-page-image.jpg") no-repeat center
-    center/cover;
+  
+  /* Fixed background image */
+  background: url("images/contact-page-image.jpg") no-repeat center center / cover;
+  background-attachment: fixed;
+  
   text-align: center;
   color: white;
   padding-top: 100px;
 }
+
 /* Dark overlay effect */
 .contact-section::before {
   content: "";
@@ -238,26 +247,29 @@ body {
   background: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
+
 .contact-form {
-  background: rgb(40, 39, 39);
+  background: #1b1b1b; /* Use whichever background you prefer */
   max-width: 610px; 
   width: 90%; 
   margin: 0 auto; 
   padding: 20px;
-  background: #1b1b1b;
   border-radius: 10px;
-  z-index: 2;
+  z-index: 2; /* So the form is above the overlay */
 }
 
 .contact-form form {
-  display: absolute;
+  /* Fix invalid property: use display:flex instead of display:absolute */
+  display: flex;
   flex-direction: column;
 }
+
 .contact-bg {
   text-align: left;
   color: white;
   z-index: 2;
 }
+
 .contact-form label {
   font-size: 25px;
   text-align: left;
@@ -267,7 +279,6 @@ body {
 
 .contact-form input {
   width: 100%;
-
   margin-bottom: 10px;
   border: 1px solid white;
   background: transparent;
@@ -308,6 +319,7 @@ body {
   width: 100%; 
   z-index: 2;
 }
+
 /* contact-form */
 
 .services-section {
