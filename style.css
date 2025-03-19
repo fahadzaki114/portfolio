@@ -214,7 +214,11 @@ body {
 }
 /* portfolio */
 .contact-section {
-  display: flex;
+    position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: fixed;
   flex-direction: column;
   align-items: center;
   justify-content: center;
